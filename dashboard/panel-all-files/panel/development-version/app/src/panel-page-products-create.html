@@ -1,0 +1,102 @@
+<!-- partial:partials/_header.html -->
+<!-- partial -->
+<div class="has-sidebar-left has-sidebar-tabs">
+    <!--navbar-->
+    <div class="sticky">
+        <div class="navbar navbar-expand d-flex justify-content-between bd-navbar white shadow">
+            <div class="relative">
+                <div class="d-flex">
+                    <div class="d-none d-md-block">
+                        <h1 class="nav-title">Add New Product</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- partial:partials/_navbar.html -->
+            <!-- partial -->
+        </div>
+    </div>
+    <!--#navbar-->
+    <div class="container-fluid animatedParent animateOnce my-3">
+        <div class="animated fadeInUpShort">
+            <form id="needs-validation" novalidate>
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="validationCustom01">Product Name</label>
+                                <input type="text" class="form-control" id="validationCustom01"
+                                       placeholder="Product Name" value="Apple Iphone 8" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="validationCustom02">Product Brand</label>
+                                <input type="text" class="form-control" id="validationCustom02" placeholder="Last name"
+                                       value="Apple" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="category">Category</label>
+                                <!--<input type="text" class="form-control"  placeholder="Mobile Phones" required>-->
+                                <select id="category" class="custom-select form-control" required>
+                                    <option value="">Select Product Category</option>
+                                    <option value="1">Mobile Phone</option>
+                                    <option value="2">Laptop & Computers</option>
+                                    <option value="3">Accessories</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please provide a valid category.
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="validationCustom04">Price</label>
+                                <input type="text" class="form-control" id="validationCustom04" placeholder="$ 250"
+                                       required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid price.
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="sku">SKU</label>
+                                <input type="text" class="form-control" id="sku" placeholder="sku-1029-5998" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid sku.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="productDetails">Product Details</label>
+                            <textarea class="form-control p-t-40 editor" id="productDetails"
+                                      placeholder="Write Something..." rows="17" required></textarea>
+                            <div class="invalid-feedback">
+                                Please provide a product details.
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="tags">Product Tags</label><br>
+                            <input type="text" class="tags-input"  id="tags" placeholder="Add New"
+                                   value="Amsterdam,Washington,Sydney,Beijing,Cairo" required>
+                        </div>
+
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card mt-4">
+                            <h6 class="card-header white">Publish Box</h6>
+                            <div class="card-body">
+
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                </div>
+                            </div>
+                            <div class="card-footer bg-transparent">
+                                <button class="btn btn-primary btn-sm" type="submit">Publish</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- partial:partials/_foot.html -->
+<!-- partial -->

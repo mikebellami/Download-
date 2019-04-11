@@ -1,0 +1,77 @@
+<!-- partial:partials/_header.html -->
+<!-- partial -->
+<div class="has-sidebar-left has-sidebar-tabs">
+    <!--navbar-->
+    <div class="sticky">
+        <div class="navbar navbar-expand d-flex justify-content-between bd-navbar white shadow">
+            <div class="relative">
+                <div class="d-flex">
+                    <div class="d-none d-md-block">
+                        <h1 class="nav-title">
+                            <i class="icon icon-bar-chart-o mr-2"></i>Float Charts
+                        </h1>
+                    </div>
+                </div>
+            </div>
+            <!-- partial:partials/_navbar.html -->
+            <!-- partial -->
+        </div>
+    </div>
+    <!--#navbar-->
+    <div class="container-fluid my-3">
+        <div class="row pb-3">
+            <div class="col-md-7">
+                <div class="card no-b">
+                    <div class="card-body b-b">
+                        <div class="card-title">
+                            <h4>Interactive Area Chart</h4>
+                        </div>
+                        <div class="btn-group" id="realtime" data-toggle="btn-toggle">
+                            <button type="button" class="btn btn-default btn-xs active" data-toggle="on">On</button>
+                            <button type="button" class="btn btn-default btn-xs" data-toggle="off">Off</button>
+                        </div>
+                        <div id="interactive" class="height-300"></div>
+                    </div>
+                    <div class="card-body b-b">
+                        <div class="card-title">
+                            <h4>Line Chart</h4>
+                        </div>
+                        <div id="line-chart" class="height-300"></div>
+                    </div>
+                    <div class="card-body b-b">
+                        <div class="card-title">
+                            <h4>Bar Chart</h4>
+                        </div>
+                        <div id="bar-chart" class="height-300"></div>
+                    </div>
+                    <div class="card-body b-b">
+                        <div class="card-title">
+                            <h4>Full Width Area Chart</h4>
+                        </div>
+                        <div id="area-chart"  class="full-width-chart height-300"></div>
+                    </div>
+                    <div class="card-body b-b">
+                        <div class="card-title">
+                            <h4>Donut Chart</h4>
+                        </div>
+                        <div id="donut-chart" class="height-300"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <h3>Documentation</h3>
+                <hr>
+                <p>You can pass plugin options using data-options attribute. Please make sure to use valid json
+                    code.</p>
+                <a href="http://www.flotcharts.org/" target="_blank"
+                   class="btn btn-xs btn-primary">Plugin Docs</a>
+                <a href="https://jsonformatter.org/" target="_blank" class="btn btn-outline-primary btn-xs">JSON
+                    Formatter</a>
+                <h4 class="mt-5">Code Example</h4>
+                <hr>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- partial:partials/_foot.html -->
+<!-- partial -->
